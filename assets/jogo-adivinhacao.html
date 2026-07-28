@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/botao-novo-jogo.css">
+    <link rel="stylesheet" href="./css/celebration.css">
+</head>
+<body>
+    <div class="celebration" aria-hidden="true"></div>
+
+    <main class="game-shell">
+        <section class="game-card">
+            <header class="game-header">
+                <span class="eyebrow">Arcade Challenge</span>
+                <h1>Jogo de Adivinhação</h1>
+                <p class="subtitle">Descubra o número secreto e desafie sua sorte em uma experiência com vibe de jogo.</p>
+            </header>
+
+            <div class="hud">
+                <span class="pill">🎮 Modo: Clássico</span>
+                <span class="pill">🔢 Intervalo: 1 a 100</span>
+            </div>
+
+            <div class="controls">
+                <input type="number" id="input" placeholder="Digite seu palpite">
+                <button class="btn-palpite">Tentar</button>
+            </div>
+            <div>
+                <button class="btn-novo-jogo hidden">Jogar Novamente</button>
+            </div>
+
+            <p class="mensagem" aria-live="polite"></p>
+            <p class="tentativas"></p>
+        </section>
+    </main>
+
+    <script src="./js/jogo-adivinhacao.js"></script>
+</body>
+</html>

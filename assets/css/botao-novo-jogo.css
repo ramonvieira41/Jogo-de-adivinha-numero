@@ -1,0 +1,29 @@
+.btn-novo-jogo {
+    display: none;
+    margin-top: 16px;
+    border: none;
+    border-radius: 999px;
+    padding: 12px 18px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text);
+    cursor: pointer;
+    background: linear-gradient(135deg, var(--accent-2), #b084ff);
+    box-shadow: 0 10px 24px rgba(139, 92, 246, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-novo-jogo.show {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-novo-jogo:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(139, 92, 246, 0.32);
+}
+
+.btn-novo-jogo:active {
+    transform: translateY(0);
+}
